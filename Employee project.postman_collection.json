@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "3eca9e19-cbfc-410e-863f-dbd1828b82a7",
+		"name": "Employee project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8216175"
+	},
+	"item": [
+		{
+			"name": "employee profile",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 2,\r\n    \"employee_id\": 54321,\r\n    \"place_of_birth\": \"Bandung\",\r\n    \"date_of_birth\": \"1995-05-15\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"https://example.com/profile_pics/user2.jpg\",\r\n    \"created_by\": \"user1\",\r\n    \"updated_by\": \"user2\",\r\n    \"created_at\": \"2023-11-23T15:30:00Z\",\r\n    \"updated_at\": \"2023-11-24T09:15:00Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place_of_birth\": \"jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 2,\r\n    \"employee_id\": 54321,\r\n    \"place_of_birth\": \"Bandung\",\r\n    \"date_of_birth\": \"1995-05-15\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"https://example.com/profile_pics/user2.jpg\",\r\n    \"created_by\": \"user1\",\r\n    \"updated_by\": \"user2\",\r\n    \"created_at\": \"2023-11-23T15:30:00Z\",\r\n    \"updated_at\": \"2023-11-24T09:15:00Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place_of_birth\": \"jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employee education",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 2,\r\n    \"employee_id\": 54321,\r\n    \"place_of_birth\": \"Bandung\",\r\n    \"date_of_birth\": \"1995-05-15\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"https://example.com/profile_pics/user2.jpg\",\r\n    \"created_by\": \"user1\",\r\n    \"updated_by\": \"user2\",\r\n    \"created_at\": \"2023-11-23T15:30:00Z\",\r\n    \"updated_at\": \"2023-11-24T09:15:00Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place_of_birth\": \"jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employee family",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employeefamily",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeefamily"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 2,\r\n    \"employee_id\": 54321,\r\n    \"place_of_birth\": \"Bandung\",\r\n    \"date_of_birth\": \"1995-05-15\",\r\n    \"gender\": \"Perempuan\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"https://example.com/profile_pics/user2.jpg\",\r\n    \"created_by\": \"user1\",\r\n    \"updated_by\": \"user2\",\r\n    \"created_at\": \"2023-11-23T15:30:00Z\",\r\n    \"updated_at\": \"2023-11-24T09:15:00Z\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place_of_birth\": \"jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeeprofile/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeeprofile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employee all data",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employeedata",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ADD DATA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 203,\r\n    \"nik\": \"12389128938\",\r\n    \"name\": \"hari\",\r\n    \"is_active\": true,\r\n    \"created_by\": \"admin\",\r\n    \"updated_by\": \"admin\",\r\n    \"start_date\": \"2023-11-22T10:00:00.000Z\",\r\n    \"end_date\": \"2023-11-22T10:00:00.000Z\",\r\n    \"employee_educations\": [\r\n        {\r\n            \"name\": \"S2 Ilmu Komputer\",\r\n            \"level\": \"Strata 2\",\r\n            \"description\": null\r\n        }\r\n    ],\r\n    \"EmployeeFamilies\": [\r\n        {\r\n    \"name\": \"John Doe\",\r\n    \"identifier\": \"1234567890\",\r\n    \"job\": \"Engineer\",\r\n    \"place_of_birth\": \"Jakarta, Indonesia\",\r\n    \"date_of_birth\": \"1990-01-01\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Suami\",\r\n    \"created_by\": \"admin\",\r\n    \"updated_by\": \"admin\"\r\n  }\r\n    ],\r\n     \"employee_profile\": {\r\n        \"place_of_birth\": \"Bandung\",\r\n        \"date_of_birth\": \"1995-05-15\",\r\n        \"gender\": \"Perempuan\",\r\n        \"is_married\": true,\r\n        \"prof_pict\": \"https://example.com/profile_pics/user2.jpg\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employeedata",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employeedata/500",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employeedata",
+								"500"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
